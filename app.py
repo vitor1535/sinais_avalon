@@ -254,7 +254,7 @@ async def comunicacao():
         
         async with websockets.connect(uri) as websocket:
             # Criar a mensagem de autenticação
-            mensagem = {"name":"authenticate","request_id":"1732223601_1802333278","local_time":4953,"msg":{"ssid":"80a18f1be0c90101c2c1cbc2bd24b043","protocol":3,"session_id":"","client_session_id":""}}
+            mensagem = {"name":"authenticate","request_id":"1733252864_1522031153","local_time":4953,"msg":{"ssid":"228db0fe2f862ed6eff962fd0f2d1203","protocol":3,"session_id":"","client_session_id":""}}
 
             # Criar a mensagem de gerar velas
             mensagem_velas = {"name":"subscribeMessage","request_id":"s_156","local_time":7000,"msg":{"name":"candle-generated","params":{"routingFilters":{"active_id":moeda_id,"size":1}}}}
@@ -429,7 +429,6 @@ async def comunicacao():
 
 
 # Intro
-intro()
 print('Aguardando horário...')
 
 # Executar a função
